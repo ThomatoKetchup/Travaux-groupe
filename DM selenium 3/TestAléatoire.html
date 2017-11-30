@@ -39,7 +39,7 @@
 <tr>
 	<td>type</td>
 	<td>id=reference</td>
-	<td>javascript{ChaineAleatoire(12,50)}</td>
+	<td>javascript{Bool()}</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -49,12 +49,12 @@
 <tr>
 	<td>type</td>
 	<td>id=datecreation</td>
-	<td>11-11-17</td>
+	<td>javascript{getDate()}</td>
 </tr>
 <tr>
-	<td>type</td>
+	<td>select</td>
 	<td>id=horsue</td>
-	<td>javascript{Bool()}</td>
+	<td>index=1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -69,7 +69,7 @@
 <tr>
 	<td>type</td>
 	<td>id=finalite_description_0</td>
-	<td>javascript{ChaineAleatoire(7)}</td>
+	<td>javascript{ChaineAleatoire(5,50)}</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -97,9 +97,14 @@
 	<td>label=Vie personnelle (habitudes de vie, situation familiale, hors données sensibles ou dangereuses…)</td>
 </tr>
 <tr>
+	<td>sendKeys</td>
+	<td>id=categoriedoe_categorie_0</td>
+	<td>\ue05B</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=categoriedoe_delaieff_0</td>
-	<td>javascript{Nombre(2)}</td>
+	<td>javascript{getRandomInt(1,500)}</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -144,6 +149,51 @@
 <tr>
 	<td>endWhile</td>
 	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=categoriedoe_categorie_0</td>
+	<td>label=Données de localisation (déplacements, données GPS, GSM…)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=donneesens</td>
+	<td>label=Oui</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=donneesens</td>
+	<td>label=Non</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=donneesens</td>
+	<td>label=Non</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=donneesens</td>
+	<td>label=Oui</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=donneesens</td>
+	<td>label=Non</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=horsue</td>
+	<td>label=Oui</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=pnnext</td>
 	<td></td>
 </tr>
 </tbody></table>
