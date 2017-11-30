@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://app.datanaos.fr/" />
+<title>TestAléatoire</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestAléatoire</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i}&lt;=${loop} </td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/app/traitements.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reference</td>
+	<td>javascript{ChaineAleatoire(12,50)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nom</td>
+	<td>javascript{ChaineAleatoire(5,15)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=datecreation</td>
+	<td>11-11-17</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=horsue</td>
+	<td>javascript{Bool()}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=donneesens</td>
+	<td>javascript{Bool()}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=autorisation</td>
+	<td>javascript{ChaineAleatoire(1,10)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=finalite_description_0</td>
+	<td>javascript{ChaineAleatoire(7)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=finalite_principale_0</td>
+	<td>javascript{Bool()}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=categoriedoe_type_0</td>
+	<td>label=DCP courantes</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=categoriedoe_categorie_0</td>
+	<td>label=Vie personnelle (habitudes de vie, situation familiale, hors données sensibles ou dangereuses…)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=categoriedoe_delaieff_0</td>
+	<td>javascript{Nombre(2)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=categoriedoe_description_0</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul.select2-choices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=s2id_autogen1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=destinataire_nom_0</td>
+	<td>javascript{ChaineAleatoire(4)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=destinataire_description_0</td>
+	<td>javascript{ChaineAleatoire(5)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=destinataire_liendoc_0</td>
+	<td>javascript{ChaineAleatoire(7)}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=valider2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${i}+1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
