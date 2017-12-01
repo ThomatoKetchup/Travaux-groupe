@@ -15,46 +15,17 @@ var ChaineAleatoire = function ChaineAleatoire(min,max)
 	return Chaine;
 }
 
-var Bool = function Bool()
-{
-	if(Math.random() <0.5)
-		return 'Oui';
-	else
-		return 'Non';
-
-}
-
-var Bool2 = function Bool2()
-{
-	if(Math.random() <0.5)
-		return 'oui';
-	else
-		return 'non';
-
-}
-
-	
-var Nombre = function Nombre(nbcar)
-{
-	var ListeCar = new Array("0","1","2","3","4","5","6","7","8","9");
-	var Chaine ='';
-	for(i = 0; i < nbcar; i++)
-	{
-		Chaine = Chaine + ListeCar[Math.floor(Math.random()*ListeCar.length)];
-	}
-	return Chaine;
-}
 
 
 function getRandomLength(min, max) {
-  return (Math.floor(Math.random() * (max - min) + min));
+  return (Math.floor(Math.random() * (max - min +1) + min));
 
 }
 
 function getRandomInt(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
-	return Math.floor(Math.random() * (max - min)) + min;
+	return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
 function getDate(){
