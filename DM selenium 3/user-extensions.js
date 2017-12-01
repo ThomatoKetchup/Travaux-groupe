@@ -49,6 +49,6 @@ function getRandomInt(min, max) {
 }
 
 function getDate(){
-	var Chaine = getRandomInt(1,31)+'-'+getRandomInt(1,12)+'-'+getRandomInt(1900,2020);
+	var Chaine = getRandomInt(1,29)+'-'+getRandomInt(1,12)+'-'+getRandomInt(1900,2020);
 	return Chaine;
 }
