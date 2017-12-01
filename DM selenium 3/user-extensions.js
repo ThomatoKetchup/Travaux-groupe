@@ -18,9 +18,18 @@ var ChaineAleatoire = function ChaineAleatoire(min,max)
 var Bool = function Bool()
 {
 	if(Math.random() <0.5)
-			return 'Oui';
-		else
-			return 'Non';
+		return 'Oui';
+	else
+		return 'Non';
+
+}
+
+var Bool2 = function Bool2()
+{
+	if(Math.random() <0.5)
+		return 'oui';
+	else
+		return 'non';
 
 }
 
@@ -38,17 +47,17 @@ var Nombre = function Nombre(nbcar)
 
 
 function getRandomLength(min, max) {
-  return (Math.random() * (max - min) + min);
+  return (Math.floor(Math.random() * (max - min) + min));
 
 }
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function getDate(){
-	var Chaine = getRandomInt(1,31)+'-'+getRandomInt(1,12)+'-'+getRandomInt(1900,2020);
+	var Chaine = getRandomInt(1,31)+"-"+getRandomInt(1,12)+"-"+getRandomInt(1900,2020);
 	return Chaine;
 }
